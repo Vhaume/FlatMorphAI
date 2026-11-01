@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+title: "FlatMorphAI"
+message: >-
+  If you use this software, please cite it using the metadata below.
+  No article describing it has been published yet; when one is, add it under
+  `preferred-citation` and keep this entry for the software itself.
+type: software
+authors:
+  - family-names: "PIERRAT"
+    given-names: "Valentin"
+    email: "valentin.p02@gmail.com"
+    affiliation: >-
+      BTSB (Biologie des Temps et des Systemes Biologiques),
+      INU Champollion, Albi, France
+version: "1.0.0"
+date-released: "2026-10-31"
+license: "CC-BY-NC-4.0"
+repository-code: "https://github.com/Vhaume/FlatMorphAI"
+abstract: >-
+  Desktop application for the automated morphological and behavioural
+  analysis of planarians from video and still images. It segments the worm
+  with a fine-tuned Mask2Former, locates the head and the eyespots, measures
+  descriptor families along the body axis, forecasts behavioural stereotype
+  classes with a LightGBM bundle, and forecasts the head-regeneration state
+  with a dedicated cascade of U-Nets and a state classifier. Results are
+  reproducible: the repository ships the reference tables and the scripts that
+  compare a fresh run against them.
+keywords:
+  - planarian
+  - image segmentation
+  - behavioural phenotyping
+  - regeneration
+  - deep learning
+  - reproducibility
+references:
+  - type: article
+    title: >-
+      Masked-attention Mask Transformer for Universal Image Segmentation
+    authors:
+      - family-names: "Cheng"
+        given-names: "Bowen"
+      - family-names: "Misra"
+        given-names: "Ishan"
+      - family-names: "Schwing"
+        given-names: "Alexander G."
+      - family-names: "Kirillov"
+        given-names: "Alexander"
+      - family-names: "Girdhar"
+        given-names: "Rohit"
+    year: 2022
+    identifiers:
+      - type: other
+        value: "arXiv:2112.01527"
+    notes: >-
+      The segmentation model is fine-tuned from the Mask2Former checkpoint
+      facebook/mask2former-swin-tiny-ade-semantic, whose weights are published
+      under CC BY-NC 4.0. See NOTICE.

@@ -1,0 +1,7 @@
+parameter;default_value;corrected_value;description
+SIZE;384;;side of the composite (tied to the state classifier)
+MASK_THR;128;;binarisation of the refined mask before the largest component
+FRAC_Z1;0.30;;channel 1 (zoom) half-side, fraction of L (side 0.60 L), not read by the classifier
+FRAC_SZ;0.15;;channel 2 (super-zoom) half-side, fraction of L (side 0.30 L)
+CLAHE_CLIP;2.0;;CLAHE clip limit of the super-zoom channel
+CLAHE_TILE;8;;CLAHE tile grid of the super-zoom channel

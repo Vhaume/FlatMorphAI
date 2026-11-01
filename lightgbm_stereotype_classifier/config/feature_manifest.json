@@ -1,0 +1,72 @@
+{
+  "n_base": 293,
+  "n_signature": 32,
+  "base_families": {
+    "KEEP (mask3_metrics)": 263,
+    "LUM (luminosity)": 5,
+    "NEWALL (new_metrics)": 18,
+    "MINED (mask3_metrics)": 7
+  },
+  "signature_families": {
+    "pigment": [
+      "pig_localstd",
+      "glcm_homogeneity"
+    ],
+    "sat": [
+      "sat_std",
+      "sat_localstd"
+    ],
+    "central": [
+      "central_max",
+      "central_bright"
+    ],
+    "valley": [
+      "valley_energy"
+    ],
+    "patchint": [
+      "pdist",
+      "psolid",
+      "pfrac",
+      "pcontrast"
+    ],
+    "temporal": [
+      "ecc_osc",
+      "ecc_chg",
+      "circ_chg",
+      "wl_osc",
+      "elong_osc",
+      "fold_chg"
+    ],
+    "curv": [
+      "worm_concav_max",
+      "worm_concav_range",
+      "worm_sol_min"
+    ],
+    "nsharp": [
+      "worm_nsharp_max",
+      "worm_nsharp_med"
+    ],
+    "border": [
+      "bd_solidity"
+    ],
+    "bilat": [
+      "bilat_asym_mean"
+    ]
+  },
+  "generators": {
+    "mask3_metrics (base morphological/photometric/motion)": null,
+    "new_metrics (fold/twist/symmetry/hole)": "compute_new_metrics.py",
+    "luminosity (centerline)": "centerline_luminosity_features.py",
+    "shape_lum_extra (bilat, bpeak)": "compute_shape_lum_metrics.py",
+    "patchint": "patch_dorsal_features.py",
+    "curv": "worm_curvature_features.py",
+    "nsharp": "worm_sharpcurve_features.py",
+    "sat": null,
+    "central": null,
+    "valley": null,
+    "pigment": null,
+    "border": null,
+    "bilat (family CSV)": null,
+    "temporal": "(in base mask3_metrics)"
+  }
+}

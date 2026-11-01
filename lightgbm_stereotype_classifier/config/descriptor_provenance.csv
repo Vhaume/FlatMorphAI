@@ -1,0 +1,302 @@
+descriptor;family;base_model;walnut_expert;source_table;script;modules;inputs;size_residualised;status
+arc_span;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+ax_band_shift;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group temporal);fold_twist_metrics.py;3 raw frames T-1,T0,T+1 + their masks (aligned on T0);no;available
+ax_flow_axial;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group temporal);fold_twist_metrics.py;3 raw frames T-1,T0,T+1 + their masks (aligned on T0);no;available
+ax_flow_circ;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group temporal);fold_twist_metrics.py;3 raw frames T-1,T0,T+1 + their masks (aligned on T0);no;available
+ax_flow_div;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group temporal);fold_twist_metrics.py;3 raw frames T-1,T0,T+1 + their masks (aligned on T0);no;available
+ax_helix_absmean;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ax_helix_consist;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ax_helix_rot;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group temporal);fold_twist_metrics.py;3 raw frames T-1,T0,T+1 + their masks (aligned on T0);no;available
+ax_offaxis_x_straight;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ax_straightness;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ax_tex_decorr;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group temporal);fold_twist_metrics.py;3 raw frames T-1,T0,T+1 + their masks (aligned on T0);no;available
+be_axial_dark_grad;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_axial_tex_step;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_border_wav;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_cross_lr_flips;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_cross_lrasym;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_cross_std;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_curv_fft;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_curv_tail_rise;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_hourglass;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_lr_asym;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_lr_bias;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_max_turn;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_mid_end_ratio;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_n_concave;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_n_inflect;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_n_necks;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_neck_depth;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_neck_len;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_roundness;Shape;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_self_overlap;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_tail_curve;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_tail_taper;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_tail_thin;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_total_turn;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_uniform_run;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_wav;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_width_cv;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_width_fft;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+be_width_grad;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group centerline);twist_border_evolution.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+branch_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+bright_leak_frac;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+bt_curv_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motioncl);twist_border_evolution_temporal.py;registered motion image (make_motion_dataset.py);no;available
+bt_curv_osc_fft;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motioncl);twist_border_evolution_temporal.py;registered motion image (make_motion_dataset.py);no;available
+bt_len_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motioncl);twist_border_evolution_temporal.py;registered motion image (make_motion_dataset.py);no;available
+bt_width_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motioncl);twist_border_evolution_temporal.py;registered motion image (make_motion_dataset.py);no;available
+circ_fit_resid;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+circ_osc;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+circ_radius_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+circ_radius_norm;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+circ_resid_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+col_blue_frac;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+col_chroma_std;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+col_darkb_shift;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+col_lab_a_mean;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+col_lab_b_mean;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+col_sat_mean;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+col_sat_std;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ctex_band_amp;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group ctex);centerline_texture.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+ctex_ends_both_light;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group ctex);centerline_texture.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+curv_bending_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+curv_bending_energy;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+curv_infl_count;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+curv_max_abs;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+curv_mean_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+curv_net_to_total;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+curv_std;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+curv_std_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+curv_undulation;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+dark_contrast;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+dark_frac;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+dark_od_max;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+dark_od_p99;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ebs_end_asym;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group endbend);end_bend.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+ebs_mid_curv;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group endbend);end_bend.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+ecc_osc;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+elong_T0;Shape;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+elong_osc;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+frangi_dark_max;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+frangi_dark_p99;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+gw_cv;Shape;yes;no;<split>_mask3_metrics.csv;precompute_geodesic_width.py;geodesic_width.py;T0 mask;no;available
+gw_neckdepth;Shape;yes;no;<split>_mask3_metrics.csv;precompute_geodesic_width.py;geodesic_width.py;T0 mask;no;available
+gw_nprom;Shape;yes;no;<split>_mask3_metrics.csv;precompute_geodesic_width.py;geodesic_width.py;T0 mask;no;available
+gw_nturns;Shape;yes;no;<split>_mask3_metrics.csv;precompute_geodesic_width.py;geodesic_width.py;T0 mask;no;available
+hess_dark_max;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+hess_dark_p99;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+hext_net;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group headext);head_extension.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+hext_range;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group headext);head_extension.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+hu3_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+hxw_net;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group widehead);head_extension_wide.py;mask window around T0 (+/-2 frames or more);no;available
+hxw_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group widehead);head_extension_wide.py;mask window around T0 (+/-2 frames or more);no;available
+hxw_reversals;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group widehead);head_extension_wide.py;mask window around T0 (+/-2 frames or more);no;available
+ip_edge_p95;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);yes;available
+ip_intensity_cv;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+maxturn_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+meijering_dark_p99;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+mot_active_frac;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+mot_axis_align;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+mot_interior_frac;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+ndef_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+nke_asym;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group neckext);neck_extent.py;T0 raw frame + T0 mask;no;available
+nke_thin_depth;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group neckext);neck_extent.py;T0 raw frame + T0 mask;no;available
+nke_thin_len;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group neckext);neck_extent.py;T0 raw frame + T0 mask;no;available
+nrm_deform;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group nonrigid);nonrigid_motion.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+nrm_frac;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group nonrigid);nonrigid_motion.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+opt_strain;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group sota);sota_motion_candidates.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+ori_tv;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+pig_axial_range;Pigmentation;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group pigment);axial_pigment.py;T0 raw frame + T0 mask;no;available
+rigid_translation;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+rm_aniso;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+rm_center_thick;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+rm_len_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motion);motion_metrics.py regional_motion.py;registered motion image (make_motion_dataset.py);no;available
+sato_dark_max;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+scrunch;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+self_prox_max;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+self_prox_nblob;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group curated);fold_twist_metrics.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+sh_bcss_zcross_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bcurv_absmean_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bcurv_entropy_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bcurv_p90_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bcurv_std_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bturn_centroid_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bturn_hf_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_bturn_mf_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_convexity_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_defdepth_mean_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_efd_h3_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_efd_h5_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_efd_h6_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_efd_hf_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_mbend_energy_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);yes;available
+sh_mcurv_absmean_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);yes;available
+sh_mcurv_max_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_mninflect_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_mtort_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_mtotturn_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);yes;available
+sh_rad_entropy_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_rad_hf_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_tang_entropy_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_tang_hf_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_tang_mode1_frac_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_width_entropy_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_zern_1_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_zern_2_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_zern_4_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_zern_5_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_zern_6_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+sh_zern_8_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shape);shape_metrics.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+skeltort_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+sol_chg;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+sper_frac_bent;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shapeper);shape_persistence.py;mask window around T0 (+/-2 frames or more);no;available
+sper_stability;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group shapeper);shape_persistence.py;mask window around T0 (+/-2 frames or more);no;available
+symdiff_AB;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+symdiff_BC;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tb_gabor_aniso;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tb_gabor_mean;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tc_coh_drop;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tc_coh_mean;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+te_edge_density;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+te_int_edge_mean;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+te_int_edge_p99;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+te_int_to_bnd;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+te_lap_var;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+te_trans_edge_frac;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tf_dir_ratio;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tf_spec_entropy;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tfr_dim;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tg_contrast;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tg_homogeneity;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tgb_aniso1;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tgb_aniso2;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tgb_hl_ratio;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+thin_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+ti_dark_contrast;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ti_kurt;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ti_p10p90;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tk_bhat5_max;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tk_bhat5_mean;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tk_dark_blobs;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tk_darkspot_frac;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tl_break;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tl_dip;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tl_range;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tl_std;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tm_area_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_bilateral_elong;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_border_LR_asym;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_border_L_rev;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_border_R;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_border_R_rev;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_bow_rev;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_curv_osc;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_elong_asym;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_end_motion_asym;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_height_net;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_len_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_maxw_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_silwidth_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_span_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_speed;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_speed_dircos;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tm_twist_max;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tm_widthsum_net;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group motionmask);twist_motion_masks.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tmob_max_end;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tailmob);tail_mobility.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tmob_mid;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tailmob);tail_mobility.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tmob_score;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tailmob);tail_mobility.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tmob_tip_vs_mid;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tailmob);tail_mobility.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+to_bimodal_frac;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+to_darkcore_max;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+to_darkcore_mean;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+totturn_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+totturn_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tpm_defect_dyn;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group topology);topology_motion.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tpm_solidity_min;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group topology);topology_motion.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tps_bend;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group sota);sota_motion_candidates.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+tr_SRE;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ts_dark_at_neck;Luminance;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+ts_width_periodic;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tsh_fin_e0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_fin_e1;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_fin_max;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_hook_e0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_hook_e1;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_hook_max;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_scallop_e0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_scallop_e1;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_scallop_max;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_scallop_mid;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_stembulb_e0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_stembulb_e1;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tsh_stembulb_max;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group terminal);terminal_shape.py;T0 raw frame + T0 mask;no;available
+tu_axial_grad;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_axial_range;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_dark_offset;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_localstd_cv;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_localstd_mean;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_localstd_p95;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_nzones;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tu_perp_range;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group tunif);texture_uniformity.py;T0 processed 384 px mask-applied image (format_dataset_size.py folder_name, single frame);no;available
+tw_E5R5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tw_E5S5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tw_L5E5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tw_L5R5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tw_L5S5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tw_R5R5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tw_S5R5;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);yes;available
+tx_lbp_entropy;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+tx_lbp_uniform;Texture;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texture);texture_features.py;T0 mask-constrained 384 px image (built from raw frame + mask);no;available
+txf_axial_mag;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texflow);axial_texture_flow.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+txf_coherence;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texflow);axial_texture_flow.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+txf_forward_frac;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texflow);axial_texture_flow.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+txf_headtail_diff;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texflow);axial_texture_flow.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+txf_lateral_mag;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texflow);axial_texture_flow.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+txf_score;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group texflow);axial_texture_flow.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+width_cv;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+width_peak;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+wl_chg;Motion;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group dyn);precompute_mask3_metrics.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+cl_lum_abrupt;Luminance;yes;no;luminosity_<split>.csv;precompute_luminosity.py;centerline_luminosity_features.py;T0 raw frame + T0 mask;no;available
+cl_axial_dark_grad;Luminance;yes;no;luminosity_<split>.csv;precompute_luminosity.py;centerline_luminosity_features.py;T0 raw frame + T0 mask;no;available
+cl_headtail_asym;Luminance;yes;no;luminosity_<split>.csv;precompute_luminosity.py;centerline_luminosity_features.py;T0 raw frame + T0 mask;no;available
+cl_overlap_dark;Luminance;yes;yes;luminosity_<split>.csv;precompute_luminosity.py;centerline_luminosity_features.py;T0 raw frame + T0 mask;no;available
+cl_lum_localrange;Luminance;yes;no;luminosity_<split>.csv;precompute_luminosity.py;centerline_luminosity_features.py;T0 raw frame + T0 mask;no;available
+waist_abrupt;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+twist_dn_clahe;Luminance;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+waist_full;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+kink_full;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+twist_peak;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+twist_frac;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+twist_conc;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+screw_osc;Motion;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+screw_nalt;Motion;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+twist_ws;Motion;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+waist_ws;Motion;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+dark_ws;Luminance;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+hole_frac;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+sym_shape_minor;Shape;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+sym_int_major;Luminance;yes;yes;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+sym_int_minor;Luminance;yes;no;new_metrics_<split>.csv;compute_new_metrics.py;compute_new_metrics.py;T0 raw frame + mask (worm-level terms use all frames of the worm);no;available
+width_max;Shape;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+circ_T0;Shape;yes;yes;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+ext_T0;Shape;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group basic);precompute_mask3_metrics.py;T0 raw frame + T0 mask;no;available
+hxw_nframes;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group widehead);head_extension_wide.py;mask window around T0 (+/-2 frames or more);no;available
+body_lat_chg;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group bodyevo);body_evolution.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+peri_amp;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group peristalsis);peristalsis.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+body_lat_wave;Motion;yes;no;<split>_mask3_metrics.csv;precompute_mask3_metrics.py (group bodyevo);body_evolution.py;3 masks T-1,T0,T+1 (+ raw frames);no;available
+pig_localstd;Pigmentation;no;yes;pigment_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+glcm_homogeneity;Texture;no;yes;pigment_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+sat_std;Pigmentation;no;yes;sat_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+sat_localstd;Pigmentation;no;yes;sat_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+central_max;Luminance;no;yes;central_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+central_bright;Luminance;no;yes;central_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+valley_energy;Luminance;no;yes;valley_<split>.csv;compute_expert_image_features.py;;T0 raw frame + T0 mask;no;available (script rewritten from the original code, values identical on the frames available at training time)
+pdist;Pigmentation;no;yes;patchint_<split>.csv;generate_signature_features.py;patch_dorsal_features.py;T0 raw frame + T0 mask;no;available
+psolid;Pigmentation;no;yes;patchint_<split>.csv;generate_signature_features.py;patch_dorsal_features.py;T0 raw frame + T0 mask;no;available
+pfrac;Pigmentation;no;yes;patchint_<split>.csv;generate_signature_features.py;patch_dorsal_features.py;T0 raw frame + T0 mask;no;available
+pcontrast;Pigmentation;no;yes;patchint_<split>.csv;generate_signature_features.py;patch_dorsal_features.py;T0 raw frame + T0 mask;no;available
+worm_concav_range;Motion;no;yes;curv_<split>.csv;generate_signature_features.py;worm_curvature_features.py;all masks of the worm (worm-level);no;available
+worm_sol_min;Motion;no;yes;curv_<split>.csv;generate_signature_features.py;worm_curvature_features.py;all masks of the worm (worm-level);no;available
+worm_nsharp_max;Motion;no;yes;nsharp_<split>.csv;generate_signature_features.py;worm_sharpcurve_features.py;all masks of the worm (worm-level);no;available
+worm_nsharp_med;Motion;no;yes;nsharp_<split>.csv;generate_signature_features.py;worm_sharpcurve_features.py;all masks of the worm (worm-level);no;available
+bilat_asym_mean;Shape;no;yes;bilat_<split>.csv;compute_shape_lum_metrics.py;compute_shape_lum_metrics.py;T0 mask;no;available (shape_lum_extra_<split>.csv, read directly by assemble_features.py)

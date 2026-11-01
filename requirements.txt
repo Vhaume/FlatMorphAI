@@ -1,0 +1,57 @@
+# FlatMorphAI 1.0.0 -- the application's dependencies, and those alone.
+# These are the versions of the environment in which both chains reproduce
+# the reference tables exactly (stereotype classification 14/14, regeneration
+# 4/4). The set resolves from PyPI alone, without conflict, on Python 3.10.
+# tools/make_environment.py rebuilds this file from the code and the installed
+# versions; run `python tools/make_environment.py --check` to compare your
+# environment with it.
+#
+# The packages marked CALCULATION change the VALUES of the descriptors
+# from one version to the next, hence possibly the forecasted class.
+# Do not relax them without replaying scripts/test_csv_stereotypies.py and
+# scripts/test_csv_regeneration.py.
+#
+# INSTALL TORCH FIRST, from the index matching your CUDA, for example:
+#   python -m pip install torch==2.5.1 torchvision==0.20.1 \
+#       --index-url https://download.pytorch.org/whl/cu121
+# then:
+#   python -m pip install -r requirements.txt
+# The pins below are then already satisfied by the CUDA build
+# (2.5.1+cu121 satisfies ==2.5.1). The default PyPI wheel has no GPU
+# support on Windows and would silently replace a CUDA installation.
+
+# CALCULATION: model inference; the validated build. See the note above.
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.46.3
+segmentation-models-pytorch==0.5.0
+timm==1.0.29
+
+# CALCULATION: float reductions / FFT can shift the last digits of many descriptors; pinned for bit-stability.
+numpy==2.2.6
+# CALCULATION: CLAHE, INTER_AREA resize and convexityDefects changed between OpenCV 4.x and 5.x; they feed the texture, shape and terminal descriptors. OpenCV 5.0.0.93 reproduces the golden.
+opencv-python==5.0.0.93
+# albumentations depends on the headless wheel, which installs the same cv2/
+# folder. Pinned to the SAME version so that whichever wheel is written last,
+# cv2 is OpenCV 5.0.0.93.
+opencv-python-headless==5.0.0.93
+# CALCULATION: skeletonize (body axis), frangi/sato/meijering vesselness and regionprops changed across releases; they feed the axial, geodesic and shape descriptors.
+scikit-image==0.25.2
+# CALCULATION: Zernike moments (sh_zern_*) depend on the mahotas version.
+mahotas==1.4.18
+scipy==1.15.3
+scikit-learn==1.7.2
+
+# numba 0.61.2 is a floor, not a preference: 0.60 declares numpy < 2.1, so it
+# would downgrade numpy and change the descriptors.
+numba==0.61.2
+llvmlite==0.44.0
+
+lightgbm==4.7.0
+pandas==2.3.3
+Pillow==11.0.0
+skan==0.13.1
+pymatting==1.1.16
+albumentations==1.4.21
+matplotlib==3.10.1
+PySide6==6.8.0.2

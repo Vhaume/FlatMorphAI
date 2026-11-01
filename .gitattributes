@@ -1,0 +1,13 @@
+# Byte-exact: no line-ending conversion on any platform. The reference tables in
+# reference_csv/ and the model files must come back exactly as committed, so
+# that a fresh clone reproduces the published numbers.
+* -text
+
+# Binary files: no diff, no merge.
+*.png    binary
+*.jpg    binary
+*.mkv    binary
+*.avi    binary
+*.pth    binary
+*.pkl    binary
+*.bin    binary

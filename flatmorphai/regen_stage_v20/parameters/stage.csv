@@ -1,0 +1,2 @@
+parameter;default_value;corrected_value;description
+CLASS_RULE;floor_half;;decimal state P to class: floor_half = clip(floor(P + 0.5), 1, 6) as in evaluation_pli_test_stade_v22, rint = numpy.rint as in the predictions file of train_modele_production_stade_v22 (differs only at exact .5)

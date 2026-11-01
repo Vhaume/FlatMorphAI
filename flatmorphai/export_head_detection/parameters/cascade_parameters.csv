@@ -1,0 +1,9 @@
+parameter;default_value;corrected_value;description
+BLASTEMA_MARGIN;0.84;;Step 2 blastema: minimum relative margin |a0 - a1| / (a0 + a1) between the soft blastema areas of the two ends to decide.
+DARKNESS_GAP;0.0;;Step 3 darkness: minimum gap between the two darkness indices to decide. 0.0 = the darkest end is retained unconditionally (version of 4 October 2026).
+N_AXIS;200;;Number of resampling points of the width-aligned medial axis.
+N_CUTS;60;;Number of perpendicular cuts read from each end for the darkness index.
+DARK_WINDOW;0.00,0.30;;Abscissa window (fraction of the length) of the darkness cuts from each end.
+TERMINAL_BAND_POSITION;0.12;;Centre of the terminal band of each end, as a fraction of the straightened worm length from the tip.
+MASK_THR;128;;Binarisation threshold of the Mask2Former masks (values 0 to 255) before extracting the largest connected component.
+MIN_MASK_AREA;300;;Minimum mask area (pixels) to process the image, otherwise black thumbnail and worm skipped.

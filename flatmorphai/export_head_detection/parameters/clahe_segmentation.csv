@@ -1,0 +1,17 @@
+parameter;default_value;corrected_value;description
+ENABLE_CLAHE;True;;Apply CLAHE on the L channel (Lab space) of the image before Mask2Former segmentation. Setting retained for the masks of the regeneration dataset (folder masks_model_Mask2Former_20260324_0451_2pass_clahe_2_t16).
+CLAHE_CLIP;2.0;;clipLimit of the pre-segmentation CLAHE.
+CLAHE_TILE;16;;tileGridSize of the pre-segmentation CLAHE (16 x 16, large tile, amplifies the background little).
+SATURATION;False;;Saturate the colours after CLAHE (variant _sat, not retained).
+WORM_THRESHOLD;0.50;;Threshold on the worm-class probability rebuilt from the logits (0.50 is equivalent to the original argmax). To be checked in the log of the notebook regenerate_masks_2pass if a lowered threshold was retained.
+TWO_PASSES;True;;Two-pass segmentation (whole image then zoomed crop per component) with skeleton-guided fusion, same path as forecast_mask_with_a_mask2former.
+MODEL_SIZE;320;;Model input size for the second pass.
+PAD_RATIO;0.50;;Relative margin of the second-pass crop.
+MERGE;skeleton_guided;;Fusion mode of the two passes.
+MIN_COMP;10;;Minimum area of a first-pass component to launch a second pass.
+MIN_PAD;32;;Minimum margin (pixels) of the crop.
+MIN_ROI;0.0;;Minimum fraction of the image covered by the crop.
+BND_DIL;0.02;;Relative dilation of the boundary zone for the fusion.
+MERGE_DIL_F;0.05;;Relative dilation used by the skeleton-guided fusion.
+KEEP_LARGEST;True;;Keep only the largest connected component of the final mask.
+BATCH;8;;Inference batch size.

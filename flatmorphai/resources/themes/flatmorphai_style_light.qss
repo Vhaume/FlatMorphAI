@@ -1,0 +1,734 @@
+/*
+ * FlatMorphAI Dashboard - light stylesheet.
+ *
+ * Palette (from the dashboard redesign):
+ *   Canvas bg       #F4F6F9
+ *   Panel / card    #FFFFFF
+ *   Panel2 (inputs) #EEF2F7
+ *   Line / border   #E2E8F0
+ *   Text primary    #0F172A
+ *   Text muted      #64748B
+ *   Brand (teal)    #0D9488
+ *   Accent (indigo) #4F46E5
+ *   Warn            #E11D48
+ *   OK              #16A34A
+ */
+
+QMainWindow,
+QWidget {
+    background-color: #F4F6F9;
+    color: #0F172A;
+    font-family: "Inter", "Segoe UI", "Roboto", Arial, sans-serif;
+    font-size: 11pt;
+}
+
+/* ------------------------------------------------------------------
+ * Sidebar
+ * ------------------------------------------------------------------ */
+QWidget#sidebarContainer,
+QWidget#sidebarCards {
+    background-color: #FFFFFF;
+}
+
+QWidget#sidebarHeader {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+QLabel#sidebarHeaderText {
+    color: #0F172A;
+    font-size: 14pt;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+QWidget#sidebarCard {
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+QWidget#sidebarCard[active="true"] {
+    background-color: #E6F3F1;
+    border: 1px solid #0D9488;
+}
+
+QWidget#sidebarCard:hover {
+    background-color: #EEF2F7;
+}
+
+QLabel#sidebarNumber {
+    color: #0F172A;
+    font-size: 11pt;
+    font-weight: 700;
+}
+
+QLabel#sidebarName {
+    color: #64748B;
+    font-size: 9pt;
+    font-weight: 500;
+}
+
+QLabel#sidebarSectionHeader {
+    color: #4F46E5;
+    background-color: transparent;
+    padding: 8px 10px 4px 10px;
+    font-size: 9pt;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+QFrame#sidebarDivider {
+    background-color: #E2E8F0;
+    border: none;
+    margin: 2px 12px 2px 12px;
+}
+
+/* ------------------------------------------------------------------
+ * Group boxes (cards)
+ * ------------------------------------------------------------------ */
+QGroupBox {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    margin-top: 28px;
+    padding-top: 22px;
+    font-size: 11pt;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 14px;
+    top: 4px;
+    padding: 2px 8px;
+    color: #0F172A;
+    font-size: 11pt;
+    font-weight: 700;
+    background-color: #FFFFFF;
+}
+
+QGroupBox#sectionBox {
+    background-color: #FFFFFF;
+}
+
+/* A plain card container (no title) used by the editor redesign. */
+QWidget#card,
+QFrame#card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+}
+
+/* Collapsible card: header inside the tile, big title, hover highlight and a
+   divider above the content so the section boundary is obvious. */
+QWidget#collapsibleCardHeader {
+    background: transparent;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+QWidget#collapsibleCardHeader:hover {
+    background-color: #F1F5F9;
+}
+QLabel#collapsibleCardTitle {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #0F172A;
+}
+QFrame#collapsibleDivider {
+    color: #E2E8F0;
+    background-color: #E2E8F0;
+    max-height: 1px;
+    border: none;
+}
+QWidget#collapsibleBody {
+    background: transparent;
+}
+
+/* Stereotype table column headers and the "Pick" number-key box. */
+QLabel#colHeader {
+    font-weight: 700;
+    color: #0F172A;
+    letter-spacing: 0.5px;
+}
+QLabel#mnemonicBox {
+    background-color: #EEF2F7;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    color: #64748B;
+    font-weight: 700;
+    padding: 1px 9px;
+}
+
+/* A group box re-used as a collapsible-card body: strip its frame, title gap
+   and background so only the surrounding card shows. */
+QGroupBox#collapsibleBody {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Controls placed on a white card inherit the global #F4F6F9 canvas colour,
+   which paints a grey band behind their text. Keep them transparent so only
+   the card shows through. ID-styled labels (chips, badges) keep their own
+   background thanks to higher selector specificity. */
+QFrame#card QCheckBox,
+QFrame#card QRadioButton,
+QFrame#card QLabel {
+    background: transparent;
+}
+
+/* ------------------------------------------------------------------
+ * Titles and labels
+ * ------------------------------------------------------------------ */
+QLabel#pageTitle {
+    color: #0F172A;
+    font-size: 18pt;
+    font-weight: 700;
+    padding-bottom: 2px;
+    qproperty-alignment: 'AlignLeft | AlignVCenter';
+}
+
+QLabel#pageSubtitle {
+    color: #64748B;
+    font-size: 11pt;
+    qproperty-alignment: 'AlignLeft | AlignVCenter';
+}
+
+QLabel#aboutTitle {
+    color: #0F172A;
+    font-size: 22pt;
+    font-weight: 800;
+    qproperty-alignment: 'AlignLeft | AlignVCenter';
+}
+
+QLabel#aboutSubtitle {
+    color: #64748B;
+    font-size: 12pt;
+    qproperty-alignment: 'AlignLeft | AlignVCenter';
+}
+
+QLabel#mutedLabel {
+    color: #64748B;
+    font-size: 10pt;
+}
+
+QLabel#sectionTitle {
+    color: #0F172A;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+/* Small uppercase caption used by the editor (e.g. "CURRENT STATE"). */
+QLabel#caption {
+    color: #64748B;
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 1.0px;
+    text-transform: uppercase;
+}
+
+/* Pill-shaped chip (counts, tags). */
+QLabel#chip {
+    background-color: #EEF2F7;
+    border: 1px solid #E2E8F0;
+    border-radius: 11px;
+    color: #0F172A;
+    padding: 3px 12px;
+    font-size: 9pt;
+    font-weight: 700;
+}
+
+QLabel#chipBrand {
+    background-color: #E6F3F1;
+    border: 1px solid #BFE3DE;
+    border-radius: 11px;
+    color: #0D9488;
+    padding: 3px 12px;
+    font-size: 9pt;
+    font-weight: 700;
+}
+
+/* "Forecasted" state chip (indigo accent), paired with chipBrand ("Corrected"). */
+QLabel#chipForecast {
+    background-color: #EEF0FD;
+    border: 1px solid #C7CCF7;
+    border-radius: 11px;
+    color: #4F46E5;
+    padding: 3px 12px;
+    font-size: 9pt;
+    font-weight: 700;
+}
+
+/* Colored round badge showing the current regeneration state number. */
+QLabel#stateBadge {
+    border-radius: 10px;
+    color: #0F172A;
+    font-size: 16pt;
+    font-weight: 800;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    qproperty-alignment: 'AlignCenter';
+}
+
+/* Big accent-colored decimal prediction value. */
+QLabel#predictValue {
+    color: #4F46E5;
+    font-size: 16pt;
+    font-weight: 800;
+}
+
+QLabel#imageViewerTitle {
+    color: #64748B;
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+QLabel#imageViewerLabel {
+    background-color: #05080C;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    color: #94A3B8;
+    padding: 12px;
+    font-size: 10pt;
+}
+
+/* ------------------------------------------------------------------
+ * Buttons
+ * ------------------------------------------------------------------ */
+QPushButton {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 6px 14px;
+    min-height: 28px;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #EEF2F7;
+}
+
+QPushButton:pressed {
+    background-color: #E2E8F0;
+}
+
+QPushButton:disabled {
+    background-color: #FFFFFF;
+    color: #B6C0CE;
+    border-color: #EDF1F6;
+}
+
+/* Dedicated Cancel button rule: always readable. */
+QPushButton#cancelButton {
+    color: #E11D48;
+    font-weight: 700;
+}
+QPushButton#cancelButton:disabled {
+    color: #94A3B8;
+}
+
+/* Destructive action (e.g. Clear all file corrections). */
+QPushButton#dangerButton {
+    color: #E11D48;
+    font-weight: 600;
+}
+
+/* Same footprint as the "Clear all file corrections" danger button, but a
+   green label: it commits (validates) states across the whole file. */
+QPushButton#validateAllButton {
+    color: #059669;
+    font-weight: 600;
+}
+
+QPushButton#primaryButton {
+    background-color: #0D9488;
+    color: #FFFFFF;
+    border: 1px solid #0D9488;
+    font-weight: 700;
+    padding: 7px 18px;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #12A594;
+    border-color: #12A594;
+}
+
+QPushButton#primaryButton:pressed {
+    background-color: #0B7A70;
+}
+
+QPushButton#primaryButton:disabled {
+    background-color: #E2E8F0;
+    color: #94A3B8;
+    border-color: #E2E8F0;
+}
+
+QPushButton#toolbarButton {
+    padding: 4px 10px;
+    min-height: 24px;
+    font-size: 10pt;
+}
+
+QToolButton {
+    background-color: transparent;
+    color: #0F172A;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+QToolButton:hover {
+    background-color: #EEF2F7;
+}
+
+/* Graph toolbar buttons (Zoom/Height/Reset/Export): visible bordered chips. */
+QToolButton#chartBtn {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
+    padding: 3px 9px;
+    min-height: 22px;
+    font-size: 10pt;
+    font-weight: 600;
+}
+QToolButton#chartBtn:hover {
+    background-color: #EEF2F7;
+    border-color: #CBD5E1;
+}
+QToolButton#chartBtn:pressed {
+    background-color: #E2E8F0;
+}
+
+/* Inline [- N +] stepper (correction control). */
+QWidget#stepper {
+    background-color: #EEF2F7;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    min-height: 30px;
+}
+QToolButton#stepperBtn {
+    background: transparent;
+    border: none;
+    color: #0F172A;
+    font-size: 13pt;
+    font-weight: 700;
+    padding: 2px 10px;
+}
+QToolButton#stepperBtn:hover {
+    background-color: #E2E8F0;
+    border-radius: 6px;
+}
+QToolButton#stepperBtn:disabled {
+    color: #94A3B8;
+}
+QLabel#stepperValue {
+    color: #0F172A;
+    font-size: 11pt;
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------
+ * Inputs
+ * ------------------------------------------------------------------ */
+QLineEdit,
+QComboBox,
+QSpinBox,
+QDoubleSpinBox,
+QTextEdit,
+QPlainTextEdit {
+    background-color: #EEF2F7;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 6px 10px;
+    selection-background-color: #0D9488;
+    selection-color: #FFFFFF;
+    font-size: 11pt;
+    min-height: 24px;
+}
+
+QLineEdit:focus,
+QComboBox:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QTextEdit:focus,
+QPlainTextEdit:focus {
+    border-color: #0D9488;
+}
+
+QComboBox::drop-down {
+    width: 24px;
+    border: none;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    selection-background-color: #0D9488;
+    selection-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    font-size: 11pt;
+}
+
+QCheckBox,
+QRadioButton {
+    color: #0F172A;
+    spacing: 8px;
+    font-size: 11pt;
+}
+
+QCheckBox::indicator,
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QCheckBox::indicator:unchecked,
+QRadioButton::indicator:unchecked {
+    background-color: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    border-radius: 5px;
+}
+
+QCheckBox::indicator:checked,
+QRadioButton::indicator:checked {
+    background-color: #0D9488;
+    border: 1px solid #0D9488;
+    border-radius: 5px;
+}
+
+QRadioButton::indicator:unchecked,
+QRadioButton::indicator:checked {
+    border-radius: 9px;
+}
+
+/* ------------------------------------------------------------------
+ * Progress bar
+ * ------------------------------------------------------------------ */
+QProgressBar {
+    background-color: #EEF2F7;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    color: #0F172A;
+    text-align: center;
+    min-height: 20px;
+    font-size: 10pt;
+}
+
+QProgressBar::chunk {
+    background-color: #0D9488;
+    border-radius: 8px;
+}
+
+/* ------------------------------------------------------------------
+ * Tables and lists / trees
+ * ------------------------------------------------------------------ */
+QTableWidget,
+QTreeView,
+QTreeWidget,
+QListWidget {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    gridline-color: #E2E8F0;
+    alternate-background-color: #F8FAFC;
+    selection-background-color: #0D9488;
+    selection-color: #FFFFFF;
+    font-size: 11pt;
+    outline: none;
+}
+
+QHeaderView::section {
+    background-color: #EEF2F7;
+    color: #0F172A;
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    font-weight: 700;
+    font-size: 11pt;
+}
+
+QTableWidget::item,
+QTreeView::item,
+QTreeWidget::item,
+QListWidget::item {
+    padding: 5px;
+    border-radius: 6px;
+}
+
+QTableWidget::item:selected,
+QTreeView::item:selected,
+QTreeWidget::item:selected,
+QListWidget::item:selected {
+    background-color: #0D9488;
+    color: #FFFFFF;
+}
+
+QTreeWidget::item:hover,
+QListWidget::item:hover {
+    background-color: #CFE9E5;
+    color: #0F172A;
+}
+
+/* ------------------------------------------------------------------
+ * Scroll bars
+ * ------------------------------------------------------------------ */
+QScrollBar:vertical {
+    background-color: transparent;
+    width: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #CBD5E1;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #94A3B8;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+    border: none;
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background-color: transparent;
+    height: 10px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #CBD5E1;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #94A3B8;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0;
+    border: none;
+    background: none;
+}
+
+/* ------------------------------------------------------------------
+ * Splitter and frames
+ * ------------------------------------------------------------------ */
+QSplitter::handle {
+    background-color: transparent;
+}
+
+QSplitter::handle:horizontal {
+    width: 8px;
+}
+
+QSplitter::handle:vertical {
+    height: 8px;
+}
+
+/* ------------------------------------------------------------------
+ * Tabs
+ * ------------------------------------------------------------------ */
+QTabWidget::pane {
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    top: -1px;
+}
+
+QTabBar::tab {
+    background-color: #EEF2F7;
+    color: #64748B;
+    border: 1px solid #E2E8F0;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px 16px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+QTabBar::tab:selected {
+    background-color: #FFFFFF;
+    color: #0D9488;
+    border-bottom: 2px solid #0D9488;
+}
+
+QTabBar::tab:hover {
+    color: #0F172A;
+}
+
+/* ------------------------------------------------------------------
+ * Status bar
+ * ------------------------------------------------------------------ */
+QStatusBar {
+    background-color: #FFFFFF;
+    color: #64748B;
+    border-top: 1px solid #E2E8F0;
+    font-size: 10pt;
+}
+
+QStatusBar QLabel {
+    color: #64748B;
+}
+
+/* ------------------------------------------------------------------
+ * Tooltips and menus
+ * ------------------------------------------------------------------ */
+QToolTip {
+    background-color: #0F172A;
+    color: #F4F6F9;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 10pt;
+}
+
+QMenu {
+    background-color: #FFFFFF;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    font-size: 11pt;
+}
+
+QMenu::item {
+    padding: 8px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #0D9488;
+    color: #FFFFFF;
+}
+
+/* ------------------------------------------------------------------
+ * Log panel (severity styling handled in code)
+ * ------------------------------------------------------------------ */
+QTextEdit#logText,
+QPlainTextEdit#logText {
+    background-color: #EEF2F7;
+    color: #0F172A;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    font-family: "Consolas", "Menlo", monospace;
+    font-size: 10pt;
+}

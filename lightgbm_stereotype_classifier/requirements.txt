@@ -1,0 +1,19 @@
+# NOT TO BE INSTALLED. Kept as a record of the environment in which this component was developed.
+# FlatMorphAI installs from the repository's root requirements.txt only.
+#
+# Reference environment of the delivered model: Python 3.10.12. Exact versions to retrain identically.
+# Classification (CPU): read the descriptor tables and predict
+lightgbm==4.7.0          # exact version: the models were trained and verified with this version
+numpy==2.2.6             # Borderline-SMOTE generation depends on numpy and scipy (nearest neighbours)
+pandas==2.3.3
+# Descriptor computation (feature_extraction/)
+scipy==1.15.3
+scikit-image>=0.21
+opencv-python>=4.8
+scikit-learn==1.7.2      # tools/ (mutual information filter, sweep)
+imbalanced-learn==0.14.2 # tools/ (Borderline-SMOTE for final model training)
+mahotas>=1.4             # optional: Zernike moments (shape_metrics.py), skipped if absent
+# Mask2Former segmentation (GPU recommended, step 0 and precompute_mask3_metrics.py)
+torch>=2.1               # CUDA (NVIDIA) or ROCm (AMD) build to use the GPU
+transformers>=4.40       # Mask2Former (Hugging Face)
+# + the FlatMorphAI package (flatmorphai.notebook_api) and the checkpoint model_Mask2Former_20260324_0451

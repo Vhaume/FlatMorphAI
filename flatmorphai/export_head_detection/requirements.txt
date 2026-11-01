@@ -1,0 +1,18 @@
+# NOT TO BE INSTALLED. Kept as a record of the environment in which this component was developed.
+# FlatMorphAI installs from the repository's root requirements.txt only.
+#
+# Reference environment: Python 3.12, PyTorch with ROCm (AMD Radeon RX 7900 XT) or CUDA. Seed 42 everywhere.
+torch>=2.1
+torchvision
+timm>=0.9
+segmentation-models-pytorch>=0.3
+transformers>=4.38
+opencv-python>=4.8
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-image>=0.21
+scikit-learn>=1.3
+albumentations>=1.3
+Pillow
+joblib

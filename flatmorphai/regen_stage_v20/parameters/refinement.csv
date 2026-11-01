@@ -1,0 +1,10 @@
+parameter;default_value;corrected_value;description
+SEUIL_P;0.40;;blastema probability threshold in each end thumbnail before back-projection
+SIGMA_VIGNETTE;2.0;;smoothing 1: Gaussian blur (px of thumbnail) of the binary blastema, re-thresholded at 0.5
+SIGMA_IMAGE;0.01;;smoothing 2: Gaussian blur of the final mask in the added zone, fraction of the worm length L
+SEUIL_GARDE;0.10;;convex hull guard: pixels gained by the hull are kept only where the blastema probability is at least this value
+RAYON_OUV;0.03;;morphological opening of the added blastema, disc radius as a fraction of L (removes structures narrower than 0.06 L)
+SEUIL_CONTACT;2.5;;contact rule: an added piece is kept if (pixels touching the mask) / sqrt(area) >= this value
+MIN_COMP_ANNOT;30;;expert annotation: minimum component area (px)
+MIN_ANNOT;150;;expert annotation: minimum annotated area (px) for the annotation to replace the model output
+JPEG_ROUNDTRIP;True;;reproduce the production file format: the refined mask is saved as JPEG quality 100 and read back by the cascade, composite and descriptors

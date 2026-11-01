@@ -1,0 +1,6 @@
+parameter;default_value;corrected_value;description
+S;384;;side of every thumbnail (tied to the trained U-Nets, do not change)
+FRAC;0.45;;blastema thumbnail half-side as a fraction of L (side 0.90 L, tied to the blastema U-Net)
+POS_CENTRE;0.12;;thumbnail centre placed at this fraction of L from the tip along the axis
+N_AXE;200;;number of points of the smoothed skeleton axis
+MARGE_BOITE;4;;margin (px) of the worm box before skeletonisation

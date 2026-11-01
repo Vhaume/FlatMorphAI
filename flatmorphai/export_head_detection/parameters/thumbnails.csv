@@ -1,0 +1,16 @@
+parameter;default_value;corrected_value;description
+SIZE;384;;Side (pixels) of every square thumbnail after centred black padding to a square.
+EYES_FRACTION;0.30;;Eye-cup detection: half-side of the crop window around the centre of the terminal band, as a fraction of the straightened worm length (window of 2 x 0.30 x length).
+EYES_MASK_DILATION;0.0;;Eye-cup detection: dilation of the mask before zeroing the background (0 = raw mask).
+EYES_BACKGROUND;0;;Eye-cup detection: value of the pixels outside the mask in the thumbnail.
+BLASTEMA_FRACTION;0.45;;Blastema segmentation: half-side of the crop window as a fraction of the worm length.
+BLASTEMA_MASK_DILATION;0.12;;Blastema segmentation: the mask is dilated by a square of side 0.12 x length before zeroing the background, so that the pale blastema cut by Mask2Former stays visible.
+BLASTEMA_BACKGROUND;0;;Blastema segmentation: value of the pixels outside the dilated mask.
+DARKNESS_HALF_WIDTH;auto;;Darkness index: half-length of the perpendicular cuts. auto = max(3, 0.5 x square root of the mask area).
+STAGE_C0;whole;;State classifier, channel 0: whole straightened worm in grey levels, background zero, bounding box, square, 384.
+STAGE_C1_FRACTION;0.30;;State classifier, channel 1: grey head zoom around the head point, half-side 0.30 x length (channel read by the model only in the full mode, see STAGE_CHANNELS).
+STAGE_C2_FRACTION;0.15;;State classifier, channel 2: head super-zoom, half-side 0.15 x length, then CLAHE, background zero.
+STAGE_C2_CLAHE_CLIP;2.0;;CLAHE applied to channel 2 of the composite: clipLimit.
+STAGE_C2_CLAHE_TILE;8;;CLAHE applied to channel 2 of the composite: tileGridSize (tile x tile).
+STAGE_CHANNELS;0,2,2;;Composite channels actually stacked for the state model (whole+superzoom mode: c0, c2, c2). Also read from the checkpoint (ch_map).
+MASKED_IMAGES_SIZE;384;;Full masked images (metrics chain): background zero, bounding box without margin, square, 384.

@@ -1,0 +1,7 @@
+parameter;default_value;corrected_value;description
+counting_threshold;0.60;;Threshold on the heat map to COUNT the eye cups (peaks of height >= threshold). Chosen on the frozen validation split as the threshold minimising the absolute counting error (peak_thr_eval of the checkpoint, criterion min_count_error). Ties go to the highest threshold, i.e. the fewest false positives.
+position_threshold;0.60;;Peak threshold used by the head-detection cascade to select the peaks that give the POSITION of the head point (PEAK_THR of anchor_cascade). Identical to the counting threshold by construction.
+head_decision_threshold;0.85;;Threshold on the MAXIMUM response of the map for the eye step of the cascade to decide the head orientation (PEAK_ANCHOR). Set on 2 October 2026 on 2082 worms with decidable expert annotation, plateau 0.80 to 0.90, out-of-fold accuracy 0.9986. Higher = fewer false positives at the eye step, the remaining worms go to the blastema then darkness steps.
+recall_099_threshold;0.1386;;Historical reference threshold chosen on validation for an eye recall of 0.99 (peak_thr_cascade of the checkpoint). Kept for documentation only, no longer used by the cascade in service which uses head_decision_threshold.
+min_peak_distance;7;;Minimum distance between two peaks (pixels of the 384 thumbnail), local-maximum window 2*d+1.
+max_peaks_for_position;2;;Number of highest peaks kept to compute the POSITION of the head point (barycentre). Does not apply to counting, which is not capped since 1 or 3 eye cups are legitimate counts.

@@ -1,0 +1,5 @@
+parameter;default_value;corrected_value;description
+mask2former_segmentation;models/mask2former_segmentation/model_Mask2Former_20260324_0451;;Mask2Former segmenter folder (holds <name>_loss_best_loss.pth and <name>_parameters.pkl), trained 24 March 2026
+blastema_segmenter;models/blastema_segmenter/blasteme_unet_384_best.pth;;blastema U-Net blasteme_unet_384_v5_s1neg (EfficientNet-B0, 4 channels, band 0.30 L stored under key dil), used by the refinement, the head cascade and the blastema descriptors
+eye_detector;models/eye_detector/eye_unet_unified_best.pth;;eyespot U-Net eye_unet_cmp_fondu_poisson_v5_jeu3E (adaptive Poisson fade v5, data set 3E), used by the cascade (eye step) and the eye descriptors
+stage_classifier;models/stage_classifier/stade_production_tout.pth;;state classifier v22 (STN + ConvNeXt V2 base 384 + 83 descriptors of metriques_finales_v22.csv), trained on all 2196 images on 22 October 2026 (train_modele_production_stade_v22)

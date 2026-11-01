@@ -1,0 +1,16 @@
+parameter;default_value;corrected_value;description
+ENHANCE;clahe_2_t16;;pre-segmentation enhancement: CLAHE on the L channel of Lab, clip 2, tile 16 (mode string of regenerate_masks_2pass, none to disable)
+WORM_THR;0.50;;threshold on the worm probability rebuilt from the logits (sum over queries of softmax(class) x sigmoid(mask)), 0.50 = argmax
+CHANNEL_ORDER;BGR;;array given to the model: BGR reproduces production exactly (the production program passes the OpenCV BGR array unchanged), RGB converts first
+BATCH;8;;images per forward pass
+MODEL_SIZE;320;;second pass: side of the zoomed crop of each component
+PAD_RATIO;0.50;;second pass: margin around each component, fraction of its box
+MERGE;skeleton_guided;;fusion of the two passes (evaluate_test_images_v2._apply_fusion)
+MIN_COMP;10;;second pass: minimum component area (px) to be re-segmented
+MIN_PAD;32;;second pass: minimum margin (px)
+MIN_ROI;0.0;;second pass: minimum crop fraction
+BND_DIL;0.02;;fusion: boundary dilation, fraction of the crop
+MERGE_DIL_F;0.05;;fusion: merge dilation, fraction
+AIRE_MIN;300;;worm choice: minimum candidate area (px), same as the cascade MIN_MASK_AREA
+REL_MIN;0.10;;worm choice: a candidate must reach this fraction of the largest component
+JPEG_ROUNDTRIP;True;;reproduce the production file format: the mask is saved by PIL as JPEG (quality 75) and read back by the refinement, False keeps the exact binary mask

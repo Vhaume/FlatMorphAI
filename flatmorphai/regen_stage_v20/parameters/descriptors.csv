@@ -1,0 +1,7 @@
+parameter;default_value;corrected_value;description
+SEUIL_BL;0.40;;blastema threshold used by the blastema shape and local colour descriptors
+F_BL;0.45;;blastema thumbnail half-side (fraction of L)
+F_EYE;0.30;;eye thumbnail half-side (fraction of L)
+DIL_BL;0.30;;band (fraction of L) around the worm kept in the blastema thumbnail, must equal the key dil of the blastema model
+THR_EYE;0.61;;eye peak counting threshold of the descriptors
+MD_EYE;7;;minimum distance between eye peaks (px of thumbnail)

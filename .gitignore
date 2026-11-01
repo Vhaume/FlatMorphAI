@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Working backups
+*.bak*
+
+# Model weights: published as GitHub release assets, restored by
+# scripts/download_models.py. They may be present in a working copy; they must never
+# be committed (several files exceed GitHub's 100 MB limit).
+checkpoints_segmentation_model/
+checkpoints_classification_model_*/
+mask2former-swin-tiny-ade-semantic/
+flatmorphai/regen_stage_v20/models/
+flatmorphai/export_head_detection/models/
+
+# Archives built by tools/make_release_assets.py, and the download cache of
+# scripts/download_models.py (2.3 GB each when present)
+release_assets/
+.model_downloads/
+
+# Local configuration and local comparison references
+.flatmorphai/
+_references_csv/
+
+# Scratch images written by the two editors (Open / zoom views)
+temp_formated/
+
+# Logs
+*.log

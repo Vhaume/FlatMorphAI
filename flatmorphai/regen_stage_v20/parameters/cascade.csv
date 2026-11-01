@@ -1,0 +1,15 @@
+parameter;default_value;corrected_value;description
+A3b.SEUIL_BL;0.40;;blastema binarisation threshold in the cascade (same as the refinement), maximum of the blastema object IoU (calibrer_seuil_objet_blasteme)
+A3b.A_MIN;30;;minimum blastema object area, px of thumbnail
+A3b.CONTACT_PX;10;;v3c8 admission: an object is admitted if it contains the tip (extent at p >= 0.50) or if one of its pixels is at most this distance (px) from the worm contour
+A3b.PEAK_THR;0.61;;eye detector counting threshold (mass of the eye response), chosen on the real validation split
+A3b.PEAK_ANCRAGE;0.85;;eye step decision: the eye step decides only if a maximum response reaches this value
+A3b.SEUIL_YEUX_TETE;0.85;;eyes counted at this threshold to break ties between candidates (number of eyes, then mean score)
+A3b.MARGE_BL;0.84;;blastema step: relative margin |a0 - a1| / (a0 + a1) of the blastema areas needed to decide
+A3b.F_EYE;0.30;;eye thumbnail half-side, fraction of L (side 0.60 L, tied to the eye U-Net)
+A3b.YEUX_SUR_BLASTEME;True;;when a blastema is seen, the eye step chooses only among the ends carrying a blastema
+A3b.FEN_AXE;0.30;;terminal portion of the axis (fraction of L), kept for compatibility, not used by the tip correction
+AC.PEAK_THR;0.60;;threshold of the two best eye peaks whose barycentre gives the returned head point (ancrage_cascade._pics)
+AC.MINDIST;7;;minimum distance (px of thumbnail) between two eye peaks
+AC.NB_COUPES;60;;darkness step: number of perpendicular cuts at each end
+AC.SEG_D;0.00,0.30;;darkness step: axis portion read from each end (fraction of the axis)
